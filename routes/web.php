@@ -15,6 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/lowongan/tampil', 'LowonganController@tampil');
