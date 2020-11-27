@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 Route::get('/lowongan/show', 'LowonganController@show');
+Route::get('/produk/show' ,'ProdukController@show');
