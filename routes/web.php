@@ -16,4 +16,8 @@ Route::get('/', function () {
 });
 
 Route::get('/lowongan/show', 'LowonganController@show');
+Route::get('/lowongan/insert', 'LowonganController@insert');
+Route::post('/lowongan/save', 'LowonganController@save');
+
+
 Route::get('/produk/show' ,'ProdukController@show');
