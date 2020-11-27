@@ -15,4 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/lowongan/tampil', 'LowonganController@tampil');
+Route::get('/lowongan/show', 'LowonganController@show');
