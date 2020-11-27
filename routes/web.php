@@ -24,3 +24,8 @@ Route::post('/lowongan/ubah', 'LowonganController@ubah');
 
 
 Route::get('/produk/show' ,'ProdukController@show');
+Route::get('/produk/insert' ,'ProdukController@insert');
+Route::post('/produk/save' ,'ProdukController@save');
+Route::get('/produk/delete/{id}' ,'ProdukController@delete');
+Route::get('/produk/edit/{id}' ,'ProdukController@edit');
+Route::post('/produk/ubah' ,'ProdukController@ubah');
