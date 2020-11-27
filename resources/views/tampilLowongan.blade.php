@@ -12,6 +12,7 @@
         <th>Kode Lowongan</th>
         <th>Posisi</th>
         <th>Jumlah Lowongan</th>
+        <th>Action</th>
     </tr>
     @foreach($lowongan as $l)
         <tr>
@@ -19,6 +20,8 @@
             <td>{{ $l->kode_lowongan }}</td>
             <td>{{ $l->posisi }}</td>
             <td>{{ $l->jumlah_lowongan }}</td>
+            <td><a href="/lowongan/delete/{{ $l->id }}">Delete</a>
+            </td>
         </tr>
     @endforeach
     </table>

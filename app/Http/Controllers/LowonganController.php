@@ -27,4 +27,9 @@ class LowonganController extends Controller
 
         return redirect('/lowongan/show');
     }
+
+    public function delete($id){
+        DB::table('lowongan')->where('id',$id)->delete();
+        return redirect('/lowongan/show');
+    }
 }
