@@ -19,7 +19,7 @@ class ProdukController extends Controller
         DB::table('produk')->insert(
             ['kode' => $req->kode,
              'nama' => $req->nama,
-             'harga' => $req->jumlah
+             'harga' => $req->harga
             ]
 
         );
