@@ -32,4 +32,20 @@ class LowonganController extends Controller
         DB::table('lowongan')->where('id',$id)->delete();
         return redirect('/lowongan/show');
     }
+
+    public function edit($id){
+        $getById = DB::table('lowongan')->where('id',$id)->get();
+        return view('tampilLowonganUpdate',['getById'=>$getById]);
+    }
+
+    public function ubah(Request $req){
+        DB::table('lowongan')->where('id',$req->id)->update(
+            ['kode_lowongan'=>$req->kode,
+             'posisi' =>$req->posisi,
+             'jumlah_lowongan' =>$req->jumlah
+            ]
+        );
+
+        return redirect('/lowongan/show');
+    }
 }

@@ -19,6 +19,8 @@ Route::get('/lowongan/show', 'LowonganController@show');
 Route::get('/lowongan/insert', 'LowonganController@insert');
 Route::post('/lowongan/save', 'LowonganController@save');
 Route::get('/lowongan/delete/{id}', 'LowonganController@delete');
+Route::get('/lowongan/edit/{id}', 'LowonganController@edit');
+Route::post('/lowongan/ubah', 'LowonganController@ubah');
 
 
 Route::get('/produk/show' ,'ProdukController@show');

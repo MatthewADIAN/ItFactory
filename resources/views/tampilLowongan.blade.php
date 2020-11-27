@@ -21,9 +21,12 @@
             <td>{{ $l->posisi }}</td>
             <td>{{ $l->jumlah_lowongan }}</td>
             <td><a href="/lowongan/delete/{{ $l->id }}">Delete</a>
+            | <a href="/lowongan/edit/{{ $l->id }}">Edit</a>
             </td>
         </tr>
     @endforeach
     </table>
+    <br><br>
+    <a href="/lowongan/insert">Insert Lowongan</a>
 </body>
 </html>
