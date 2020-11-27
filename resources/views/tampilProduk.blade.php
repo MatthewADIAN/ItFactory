@@ -48,6 +48,8 @@
         </nav>
 
         <br><br><br>
+        <h1>Produk</h1>
+        <br>
 
 <table border='1' class="table table-striped">
     <thead class="thead-dark">
@@ -74,6 +76,6 @@
     </tbody>
     </table>
     <br><br>
-    <a href="/produk/insert">Insert Produk</a>
+    <a class="btn btn-primary" href="/produk/insert" role="button">Insert Produk</a>
 </body>
 </html>
