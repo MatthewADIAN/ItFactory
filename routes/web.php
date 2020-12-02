@@ -29,3 +29,7 @@ Route::post('/produk/save' ,'ProdukController@save');
 Route::get('/produk/delete/{id}' ,'ProdukController@delete');
 Route::get('/produk/edit/{id}' ,'ProdukController@edit');
 Route::post('/produk/ubah' ,'ProdukController@ubah');
+
+
+Route::get('/user/register', 'UserController@register');
+Route::post('/user/save', 'UserController@save');
