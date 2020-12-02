@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>It Factory</title>
     <style>
+            img{
+                opacity: 0.4;
+            }
+            .h1{
+                text-shadow: 2px 2px 8px black;
+            }
             .description{
                 position: absolute;
                 top: 30%;
@@ -28,14 +34,14 @@
             }
         </style>
 </head>
-<body style="background-color: #C7AC92">
-<img src ="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg">
+<body style="background-color: grey">
+<img class="card-img-top" src ="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg" alt="Images" height="720px">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
-    <nav class="navbar navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-dark bg-dark fixed-top">
             <a class="navbar-brand">It Factory Website</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -72,17 +78,18 @@
     
         <div class="container">
             <div class="description">
-                <h1>    Selamat Datang di Website It Factory
-                    <p>    Website untuk jual beli Jasa IT
+                <h1 style="color: red">
+                   <div class="h1">Selamat Datang di Website It Factory</div>
+                    <p style="color: white" class="h1">Website untuk jual beli Jasa IT
                     </p>   
-                    <a class="btn btn-secondary btn-lg" th:href="@{/login}" role="button" id="buttonLogin">Login</a>   
+                    <a class="btn btn-secondary btn-lg" th:href="@{/login}" role="button" id="buttonLogin">LOGIN</a>   
                 </h1>  
             </div>
 
         </div>
 
 
-    <footer class="fixed-bottom text-center" style="background-color: #f3eee7"> 
+    <footer class="fixed-bottom text-center" style="background-color: white"> 
         @Copyright Matthew Adian, Agustinus Yoga, Matius
     </footer>
 
