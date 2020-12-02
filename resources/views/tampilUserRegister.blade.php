@@ -55,7 +55,7 @@
             <tr><td align="right">Email</td><td><input type="email" name="email" required></td></tr>
             <tr><td align="right">Password</td><td><input type="password" name="password" required></td></tr>
         </table>
-        <center><input class="btn btn-primary" type="submit" value="Insert"></center>
+        <center><input class="btn btn-primary" type="submit" value="Register"></center>
     </form>
 </body>
 </html>
