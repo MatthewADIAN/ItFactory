@@ -79,7 +79,8 @@
                    <div class="h1">Selamat Datang di Website It Factory</div>
                     <p style="color: white" class="h1">Website Perusahaan pembuat Software
                     </p>   
-                    <a class="btn btn-secondary btn-lg" href="/produk/tampil" role="button" id="buttonLogin">Order Software</a>   
+                    <a class="btn btn-secondary btn-lg" href="/produk/tampil" role="button" id="buttonLogin">Order Software</a>
+                    <a class="btn btn-secondary btn-lg" href="/lowongan/daftar" role="button" id="buttonLogin">Daftar Kerja</a>   
                 </h1>  
             </div>
 
