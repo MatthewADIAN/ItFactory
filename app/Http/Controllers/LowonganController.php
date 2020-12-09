@@ -50,7 +50,8 @@ class LowonganController extends Controller
     }
 
     public function daftar(){
-        return view('daftarLowongan');
+        $pendaftarlowongan = DB::table('pendaftar_lowongan')->get();
+        return view('daftarLowongan',['pendaftarlowongan'=>$pendaftarlowongan]);
     }
 
     public function saveDaftar(Request $req){

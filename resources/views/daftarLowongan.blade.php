@@ -64,7 +64,7 @@
         </tr>
     </thead>
     <tbody>
-    @foreach($lowongan as $o)
+    @foreach($pendaftarlowongan as $o)
         <tr>
             <td>{{ $o->id }}</td>
             <td>{{ $o->kode_lowongan}}</td>
