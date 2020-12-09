@@ -33,5 +33,6 @@ Route::get('/produk/edit/{id}' ,'ProdukController@edit');
 Route::post('/produk/ubah' ,'ProdukController@ubah');
 Route::get('/produk/tampil' ,'BelanjaController@tampil');
 Route::post('/produk/simpan','BelanjaController@simpan');
+Route::get('/produk/delete' ,'BelanjaController@delete');
 
 

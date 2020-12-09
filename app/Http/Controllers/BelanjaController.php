@@ -20,6 +20,12 @@ class BelanjaController extends Controller
 
         );
 
-        return redirect('/produk/masuk');
+        return redirect('/produk/tampil');
     }
+
+    public function delete(){
+        DB::table('belanja_produk')->delete();
+        return redirect('/produk/tampil');
+    }
+
     }

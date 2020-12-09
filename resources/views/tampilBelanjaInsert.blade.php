@@ -54,6 +54,7 @@
     </form>
 
     <br><br>
+    <a class="btn btn-secondary btn-primary" href="/produk/delete" role="button" id="buttonLogin">Kosongkan Keranja</a>
     <table border='1' class="table table-bordered" style="width: 75%" align="center">
     <thead class="thead-dark">
         <tr>
