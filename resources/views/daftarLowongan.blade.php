@@ -60,15 +60,17 @@
         <tr>
             <th>Id</th>
             <th>Kode Lowongan</th>
-            <th>Posisi</th>
+            <th>Nama</th>
+            <th>Alamat</th>
         </tr>
     </thead>
     <tbody>
     @foreach($pendaftarlowongan as $o)
         <tr>
             <td>{{ $o->id }}</td>
-            <td>{{ $o->kode_lowongan}}</td>
-            <td>{{ $o->posisi }}</td>
+            <td>{{ $o->lowongan}}</td>
+            <td>{{ $o->nama }}</td>
+            <td>{{ $o->alamat }}</td>
             </td>
         </tr>
     @endforeach
