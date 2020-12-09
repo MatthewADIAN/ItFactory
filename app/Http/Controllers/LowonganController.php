@@ -41,8 +41,7 @@ class LowonganController extends Controller
     public function ubah(Request $req){
         DB::table('lowongan')->where('id',$req->id)->update(
             ['kode_lowongan'=>$req->kode,
-             'posisi' =>$req->posisi,
-             'jumlah_lowongan' =>$req->jumlah
+             'posisi' =>$req->posisi
             ]
         );
 

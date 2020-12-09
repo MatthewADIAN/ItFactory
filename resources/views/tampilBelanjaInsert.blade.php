@@ -23,21 +23,22 @@
                         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/lowongan/daftar">Daftar Lowongan</a>
+                        <a class="nav-link" href="/lowongan/daftar">Daftar Kerja</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="/produk/tampil">Pesan Software</a>
                     </li>
                     
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Admin
+                            List 
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item active">Jasa</a>
+                            <a class="dropdown-item" href="/produk/show">List Software</a>
                             <a class="dropdown-item" href="/lowongan/show">List Lowongan</a>
                         </div>
                     </li>
+                    
                 </ul>
             </div>
         </nav>
@@ -60,8 +61,8 @@
     <thead class="thead-dark">
         <tr>
             <th>Id</th>
-            <th>Nama Produk</th>
-            <th>Jumlah Produk</th>
+            <th>Nama Software</th>
+            <th>Jumlah Software</th>
         </tr>
     </thead>
     <tbody>

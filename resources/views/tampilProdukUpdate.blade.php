@@ -19,22 +19,22 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/lowongan/daftar">Daftar Lowongan</a>
+                        <a class="nav-link" href="/lowongan/daftar">Daftar Kerja</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/produk/show">Beli Jasa</a>
+                        <a class="nav-link" href="/produk/tampil">Pesan Software</a>
                     </li>
                     
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Admin
+                            List 
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item active" href="/produk/show">Jasa</a>
+                            <a class="dropdown-item active" href="/produk/show">List Software</a>
                             <a class="dropdown-item" href="/lowongan/show">List Lowongan</a>
                         </div>
                     </li>
@@ -42,7 +42,7 @@
             </div>
         </nav>
         <br><br><br>
-        <h1 align="center">Edit Data Produk</h1>
+        <h1 align="center">Edit Data Software</h1>
         <br>
     <form method="post" action="/produk/ubah">
         {{ csrf_field() }}
@@ -50,9 +50,9 @@
 
         @foreach($getById as $gBI)
             <input type="hidden" name="id" value="{{ $gBI->id }}">
-            <tr><td align="right">Kode Produk</td><td><input type="text" name="kode" value="{{ $gBI->kode }}" required></td></tr>
-            <tr><td align="right">Nama Produk</td><td><input type="text" name="nama" value="{{ $gBI->nama }}" required></td></tr>
-            <tr><td align="right">Harga Produk</td><td><input type="text" name="harga" value="{{ $gBI->harga }}" required></td></tr>
+            <tr><td align="right">Kode Software</td><td><input type="text" name="kode" value="{{ $gBI->kode }}" required></td></tr>
+            <tr><td align="right">Nama Software</td><td><input type="text" name="nama" value="{{ $gBI->nama }}" required></td></tr>
+            <tr><td align="right">Harga Software</td><td><input type="text" name="harga" value="{{ $gBI->harga }}" required></td></tr>
         @endforeach    
         </table>
         <center><input class="btn btn-primary" type="submit" value="Update"></center>

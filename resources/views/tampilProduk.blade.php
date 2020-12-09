@@ -28,18 +28,18 @@
                         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/lowongan/daftar">Daftar Lowongan</a>
+                        <a class="nav-link" href="/lowongan/daftar">Daftar Kerja</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="/produk/show">Beli Jasa</a>
+                        <a class="nav-link" href="/produk/tampil">Pesan Software</a>
                     </li>
                     
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Admin
+                            List 
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item active">Jasa</a>
+                            <a class="dropdown-item active">List Software</a>
                             <a class="dropdown-item" href="/lowongan/show">List Lowongan</a>
                         </div>
                     </li>
@@ -48,16 +48,16 @@
         </nav>
 
         <br><br><br>
-        <h1 align="center">Produk</h1>
+        <h1 align="center">Daftar Software</h1>
         <br>
 
 <table border='1' class="table table-bordered" style="width: 75%" align="center">
     <thead class="thead-dark">
         <tr>
             <th>Id</th>
-            <th>Kode Produk</th>
-            <th>Nama Produk</th>
-            <th>Harga Produk</th>
+            <th>Kode Software</th>
+            <th>Macam Software</th>
+            <th>Harga Software</th>
             <th>Action</th>
         </tr>
     </thead>
@@ -76,6 +76,6 @@
     </tbody>
     </table>
     <br>
-    <center><a class="btn btn-primary" href="/produk/insert" role="button">Insert Produk</a></center>
+    <center><a class="btn btn-primary" href="/produk/insert" role="button">Insert Software</a></center>
 </body>
 </html>

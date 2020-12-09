@@ -19,23 +19,23 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/lowongan/daftar">Daftar Lowongan</a>
+                        <a class="nav-link" href="/lowongan/daftar">Daftar Kerja</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/produk/show">Beli Produk</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/produk/tampil">Pesan Software</a>
                     </li>
                     
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Admin
+                            List 
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/produk/show">Jasa</a>
-                            <a class="dropdown-item active">List Lowongan</a>
+                            <a class="dropdown-item" href="/produk/show">List Software</a>
+                            <a class="dropdown-item active" href="/lowongan/show">List Lowongan</a>
                         </div>
                     </li>
                 </ul>
