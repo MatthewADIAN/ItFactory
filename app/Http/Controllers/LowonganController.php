@@ -19,8 +19,7 @@ class LowonganController extends Controller
     public function save(Request $req){
         DB::table('lowongan')->insert(
             ['kode_lowongan' => $req->kode,
-             'posisi' => $req->posisi,
-             'jumlah_lowongan' => $req->jumlah
+             'posisi' => $req->posisi
             ]
 
         );

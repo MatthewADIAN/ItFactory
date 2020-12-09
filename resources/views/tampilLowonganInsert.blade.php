@@ -49,7 +49,6 @@
         <table class="table table-borderless table-dark" style="width: auto" align="center">
             <tr><td align="right">Kode Lowongan</td><td><input type="text" name="kode" required></td></tr>
             <tr><td align="right">Posisi</td><td><input type="text" name="posisi" required></td></tr>
-            <tr><td align="right">Jumlah Lowongan</td><td><input type="number" name="jumlah" required></td></tr>
         </table>
         <center><input class="btn btn-primary" type="submit" value="Insert"></center>
     </form>
