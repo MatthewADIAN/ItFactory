@@ -53,5 +53,26 @@
         </table>
         <center><input class="btn btn-primary" type="submit" value="Insert"></center>
     </form>
+
+    <br><br>
+    <table border='1' class="table table-bordered" style="width: 75%" align="center">
+    <thead class="thead-dark">
+        <tr>
+            <th>Id</th>
+            <th>Kode Lowongan</th>
+            <th>Posisi</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach($lowongan as $o)
+        <tr>
+            <td>{{ $o->id }}</td>
+            <td>{{ $o->kode_lowongan}}</td>
+            <td>{{ $o->posisi }}</td>
+            </td>
+        </tr>
+    @endforeach
+    </tbody>
+    </table>
 </body>
 </html>
