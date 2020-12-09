@@ -48,4 +48,20 @@ class LowonganController extends Controller
 
         return redirect('/lowongan/show');
     }
+
+    public function daftar(){
+        return view('daftarLowongan');
+    }
+
+    public function saveDaftar(Request $req){
+        DB::table('pendaftar_lowongan')->insert(
+            ['lowongan' => $req->lowongan,
+             'nama' => $req->nama,
+             'alamat' => $req->alamat
+            ]
+
+        );
+
+        return redirect('/lowongan/daftar');
+    }
 }

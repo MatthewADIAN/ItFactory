@@ -53,25 +53,22 @@
                         <a class="nav-link">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/lowongan/show">Lowongan</a>
+                        <a class="nav-link" href="/lowongan/daftar">Daftar Lowongan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/produk/show">Produk</a>
+                        <a class="nav-link" href="/produk/show">Beli Jasa</a>
                     </li>
-                    <!--
+                    
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Profile
+                            Admin
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" th:href="@{/address}">Address</a>
-                            <a class="dropdown-item" th:href="@{/basic}">Basic</a>
-                            <a class="dropdown-item" th:href="@{/contact}">Contact</a>
-                            <a class="dropdown-item" th:href="@{/currentoccupation}">Current Occupation</a>
-                            <a class="dropdown-item" th:href="@{/education}">Education</a>
+                            <a class="dropdown-item" href="/produk/show">Jasa</a>
+                            <a class="dropdown-item" href="/lowongan/show">List Lowongan</a>
                         </div>
                     </li>
-                    -->
+                    
                 </ul>
             </div>
         </nav>

@@ -3,15 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lowongan</title>
+    <title>Insert Data Lowongan</title>
 </head>
 <body style="background-color: grey">
-    <style>
-        th, tr, td{
-            text-align: center;
-        }
-    </style>
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
@@ -51,34 +45,17 @@
                 </ul>
             </div>
         </nav>
-
         <br><br><br>
-        <h1 align="center">Lowongan</h1>
+        <h1 align="center">Daftar Lowongan</h1>
         <br>
-
-<table border='1' class="table table-bordered" style="width: 75%" align="center">
-    <thead class="thead-dark">
-        <tr>
-            <th>ID</th>
-            <th>Kode Lowongan</th>
-            <th>Posisi</th>
-            <th>Action</th>
-        </tr>
-    </thead>
-    <tbody>
-    @foreach($lowongan as $l)
-        <tr>
-            <td>{{ $l->id }}</td>
-            <td>{{ $l->kode_lowongan }}</td>
-            <td>{{ $l->posisi }}</td>
-            <td><a class="btn btn-primary" href="/lowongan/delete/{{ $l->id }}">Delete</a>
-            | <a class="btn btn-primary" href="/lowongan/edit/{{ $l->id }}">Edit</a>
-            </td>
-        </tr>
-    @endforeach
-    </tbody>
-    </table>
-    <br>
-    <center><a class="btn btn-primary" href="/lowongan/insert" role="button">Insert Lowongan</a></center>
+    <form method="post" action="/lowongan/saveDaftar">
+        {{ csrf_field() }}
+        <table class="table table-borderless table-dark" style="width: auto" align="center">
+            <tr><td align="right">Lowongan</td><td><input type="text" name="lowongan" required></td></tr>
+            <tr><td align="right">Nama</td><td><input type="text" name="nama" required></td></tr>
+            <tr><td align="right">Alamat</td><td><input type="text" name="alamat" required></td></tr>
+        </table>
+        <center><input class="btn btn-primary" type="submit" value="Insert"></center>
+    </form>
 </body>
 </html>

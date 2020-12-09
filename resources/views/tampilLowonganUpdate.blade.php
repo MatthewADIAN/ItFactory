@@ -56,7 +56,6 @@
             <input type="hidden" name="id" value="{{ $gBI->id }}">
             <tr><td align="right">Kode Lowongan</td><td><input type="text" name="kode" value="{{ $gBI->kode_lowongan }}" required></td></tr>
             <tr><td align="right">Posisi</td><td><input type="text" name="posisi" value="{{ $gBI->posisi }}" required></td></tr>
-            <tr><td align="right">Jumlah Lowongan</td><td><input type="number" name="jumlah" value="{{ $gBI->jumlah_lowongan }}" required></td></tr>
         @endforeach    
         </table>
         <center><input class="btn btn-primary" type="submit" value="Update"></center>
