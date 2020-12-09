@@ -26,7 +26,7 @@
                         <a class="nav-link" href="/lowongan/daftar">Daftar Lowongan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="/produk/show">Beli Jasa</a>
+                        <a class="nav-link" href="/produk/show">Beli Jasa</a>
                     </li>
                     
                     <li class="nav-item dropdown">
@@ -34,7 +34,7 @@
                             Admin
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item active">Jasa</a>
+                            <a class="dropdown-item active" href="/produk/show">Jasa</a>
                             <a class="dropdown-item" href="/lowongan/show">List Lowongan</a>
                         </div>
                     </li>

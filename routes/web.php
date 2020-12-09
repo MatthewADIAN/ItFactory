@@ -32,9 +32,6 @@ Route::get('/produk/delete/{id}' ,'ProdukController@delete');
 Route::get('/produk/edit/{id}' ,'ProdukController@edit');
 Route::post('/produk/ubah' ,'ProdukController@ubah');
 Route::get('/produk/tampil' ,'BelanjaController@tampil');
-Route::get('/produk/masuk','BelanjaController@masuk');
 Route::post('/produk/simpan','BelanjaController@simpan');
 
 
-Route::get('/user/register', 'UserController@register');
-Route::post('/user/save', 'UserController@save');

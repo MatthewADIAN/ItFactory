@@ -23,38 +23,57 @@
                         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/lowongan/show">Lowongan</a>
+                        <a class="nav-link" href="/lowongan/daftar">Daftar Lowongan</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link">Produk</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/produk/tampil">Pesan Software</a>
                     </li>
-                    <!--
+                    
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Profile
+                            Admin
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" th:href="@{/address}">Address</a>
-                            <a class="dropdown-item" th:href="@{/basic}">Basic</a>
-                            <a class="dropdown-item" th:href="@{/contact}">Contact</a>
-                            <a class="dropdown-item" th:href="@{/currentoccupation}">Current Occupation</a>
-                            <a class="dropdown-item" th:href="@{/education}">Education</a>
+                            <a class="dropdown-item active">Jasa</a>
+                            <a class="dropdown-item" href="/lowongan/show">List Lowongan</a>
                         </div>
                     </li>
-                    -->
                 </ul>
             </div>
         </nav>
         <br><br><br>
-        <h1 align="center">Insert Data Produk</h1>
+        <h1 align="center">Belanja Software</h1>
         <br>
     <form method="post" action="/produk/simpan">
         {{ csrf_field() }}
         <table class="table table-borderless table-dark" style="width: auto" align="center">
-            <tr><td align="right">Nama Jasa</td><td><input type="text" name="jasa" required></td></tr>
-            <tr><td align="right">Harga Produk</td><td><input type="text" name="harga" required></td></tr>
+            <tr><td align="right">Nama Software</td><td><input type="text" name="jasa" required></td></tr>
+            <tr><td align="right">Jumlah</td><td><input type="text" name="jumlah" required></td></tr>
         </table>
-        <center><input class="btn btn-primary" type="submit" value="Insert"></center>
+        <center><input class="btn btn-primary" type="submit" value="Order"></center>
     </form>
+
+    <br><br>
+    <table border='1' class="table table-bordered" style="width: 75%" align="center">
+    <thead class="thead-dark">
+        <tr>
+            <th>Id</th>
+            <th>Nama Produk</th>
+            <th>Jumlah Produk</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach($belanja_produk as $b)
+        <tr>
+            <td>{{ $b->id }}</td>
+            <td>{{ $b->jasa}}</td>
+            <td>{{ $b->jumlah }}</td>
+            </td>
+        </tr>
+    @endforeach
+    </tbody>
+    </table>
+
+
 </body>
 </html>

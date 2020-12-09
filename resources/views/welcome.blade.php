@@ -56,7 +56,7 @@
                         <a class="nav-link" href="/lowongan/daftar">Daftar Lowongan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/produk/show">Beli Jasa</a>
+                        <a class="nav-link" href="/produk/tampil">Pesan Software</a>
                     </li>
                     
                     <li class="nav-item dropdown">
@@ -77,9 +77,9 @@
             <div class="description">
                 <h1 style="color: red">
                    <div class="h1">Selamat Datang di Website It Factory</div>
-                    <p style="color: white" class="h1">Website untuk jual beli Jasa IT
+                    <p style="color: white" class="h1">Website Perusahaan pembuat Software
                     </p>   
-                    <a class="btn btn-secondary btn-lg" href="/user/register" role="button" id="buttonLogin">Register</a>   
+                    <a class="btn btn-secondary btn-lg" href="/produk/tampil" role="button" id="buttonLogin">Order Software</a>   
                 </h1>  
             </div>
 
