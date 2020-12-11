@@ -67,12 +67,22 @@
     </thead>
     <tbody>
     @foreach($belanja_produk as $b)
+    <?php if ($b->jumlah >= 5): ?>
+        <tr>
+            <td style="color:red">{{ $b->id }}</td>
+            <td style="color:red">{{ $b->jasa}}</td>
+            <td style="color:red">{{ $b->jumlah }}</td>
+            </td>
+        </tr>
+    <?php else: ?>
         <tr>
             <td>{{ $b->id }}</td>
             <td>{{ $b->jasa}}</td>
             <td>{{ $b->jumlah }}</td>
             </td>
         </tr>
+    <?php endif ?>
+
     @endforeach
     </tbody>
     </table>

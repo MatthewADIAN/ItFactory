@@ -17,7 +17,6 @@ class BelanjaController extends Controller
             ['jasa' => $req->jasa,
              'jumlah' => $req->jumlah
             ]
-
         );
 
         return redirect('/produk/tampil');
