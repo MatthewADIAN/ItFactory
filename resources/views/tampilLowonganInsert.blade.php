@@ -25,7 +25,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/lowongan/daftar">Daftar Kerja</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="/produk/tampil">Pesan Software</a>
                     </li>
                     
